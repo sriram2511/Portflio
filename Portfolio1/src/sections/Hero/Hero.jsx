@@ -15,6 +15,7 @@ import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
 
 import CV from '../../assets/cv.pdf'
+import CV2 from '../../assets/cv2.pdf'
 import { useTheme } from '../../common/ThemeContext'
 function Hero() {
   const { theme, toggleTheme } = useTheme()
@@ -40,9 +41,9 @@ function Hero() {
         </h1>
         <h2>M.Sc Graduate</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          {/* <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter Icon" />
-          </a>
+          </a> */}
           <a href="https://github.com/" target="_blank">
             <img src={githubIcon} alt="Twitter Icon" />
           </a>
@@ -54,9 +55,14 @@ function Hero() {
           {' '}
           An M.Sc. Data Science graduate with hands-on internship experience,
           strong analytical and problem-solving skills, effective communication,
-          teamwork.
+          teamwork, adaptability, quick learning, attention to detail, and
+          excellent time management. Seeking opportunities to contribute to
+          organizational goals and work with real-world data.
         </p>
-        <a href={CV} download>
+        {/* <a href={CV} download>
+          <button className="hover"> Resume</button>
+        </a> */}
+        <a href={CV2} download>
           <button className="hover"> Resume</button>
         </a>
       </div>
